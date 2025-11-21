@@ -499,7 +499,7 @@ const Features = () => {
           {/* Web Dev */}
           <BentoTilt>
             <BentoCard
-              src="videos/feature-4.mp4"
+              src="videos/bau.mp4"
               title={
                 <>
                   Web <b>Development</b>
@@ -513,7 +513,7 @@ const Features = () => {
           {/* Product Design */}
           <BentoTilt>
             <BentoCard
-              src="videos/agency-showcase-4.mp4"
+              src="videos/details.mp4"
               title={
                 <>
                   Product <b>Design</b>
