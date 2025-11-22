@@ -6,7 +6,7 @@ import Story from "./components/Story";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
-
+// something
 function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
