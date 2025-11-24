@@ -1,4 +1,4 @@
-import { gsap } from "gsap";
+import gsap  from "gsap";
 import { useState, useRef, useEffect } from "react";
 
 export const VideoPreview = ({ children }) => {

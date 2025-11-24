@@ -6,6 +6,7 @@ import Story from "./components/Story";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
+import TermsAndConditions from "./components/TermsAndCondition";
 // something
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Features />
       <Story />
+      {/* <TermsAndConditions/> */}
       <Contact />
       <Footer />
     </main>
