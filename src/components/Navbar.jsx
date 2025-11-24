@@ -303,8 +303,8 @@ const NavBar = () => {
               />
 
               {/* Desktop Product Button */}
-              {/* <Button
-                title="Products"
+              <Button
+                title="Get in Touch"
                 rightIcon={<TiLocationArrow />}
                 containerClass="
                   hidden md:flex items-center gap-1 
@@ -313,7 +313,7 @@ const NavBar = () => {
                   px-4 py-2 rounded-full
                   hover:bg-white/20 transition
                 "
-              /> */}
+              />
             </div>
 
             {/* RIGHT */}
