@@ -28,7 +28,7 @@ const About = () => {
   });
 
   return (
-    <div id="about" className="min-h-screen w-screen">
+    <div data-scroll-section id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
 
         {/* ---- UPDATED AGENCY CONTENT ---- */}
@@ -58,7 +58,7 @@ const About = () => {
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path about-image">
           <img
-            src="https://cdn.dribbble.com/userupload/14855277/file/original-33daecb6ace843e64daa8295ffdcd875.png?resize=1504x1128&vertical=center"
+            src="/img/about.webp"
             alt="Background"
             className="absolute left-0 top-0 size-full object-cover"
           />

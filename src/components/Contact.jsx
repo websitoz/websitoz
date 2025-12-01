@@ -146,17 +146,17 @@ const Contact = () => {
 
           {/* RIGHT — TEXT + BUTTON */}
           <div className="flex flex-col justify-center text-center md:text-left">
-            <p className="mb-3 font-general text-xs uppercase tracking-[0.2em] text-gray-300 md:mb-4">
+            <p className="mb-3 font-general text-center text-xs uppercase tracking-[0.2em] text-gray-300 md:mb-4">
               Let's Collaborate
             </p>
 
             <AnimatedTitle
               title="b<b>r</b>ing your<br /> id<b>e</b>as to lif<b>e</b>."
-              className="special-font w-full !text-4xl !leading-[1] !font-black
+              className="special-font w-full text-left !text-4xl !leading-[1] !font-black
               sm:!text-5xl md:!text-6xl lg:!text-[4.5rem]"
             />
 
-            <p className="mt-6 max-w-md md:max-w-lg text-gray-300 font-light mx-auto md:mx-0">
+            <p className="mt-6 max-w-md md:max-w-lg text-center text-gray-300 font-light mx-auto md:mx-0">
               Whether you're building a brand, designing a product, or launching a startup — 
               our team can help you create something extraordinary.
             </p>

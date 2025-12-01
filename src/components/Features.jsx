@@ -457,7 +457,7 @@ const Features = () => {
         </div>
 
         {/* Primary Bento Full Width */}
-        <BentoTilt className="border border-white/10 relative mb-10 h-[55vh] md:h-[65vh] w-full overflow-hidden rounded-lg">
+        {/* <BentoTilt className="border border-white/10 relative mb-10 h-[55vh] md:h-[65vh] w-full overflow-hidden rounded-lg">
           <BentoCard
             src="videos/hero_optim.mp4"
             title={
@@ -468,7 +468,7 @@ const Features = () => {
             description="We craft high-impact, high-performance digital products and websites for brands that lead."
             isComingSoon={true}
           />
-        </BentoTilt>
+        </BentoTilt> */}
 
         {/* Responsive Bento Grid */}
         <div
@@ -499,7 +499,7 @@ const Features = () => {
           {/* Web Dev */}
           <BentoTilt>
             <BentoCard
-              src="videos/bau.mp4"
+              src="videos/web1.mp4"
               title={
                 <>
                   Web <b>Development</b>

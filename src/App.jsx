@@ -42,6 +42,7 @@ import CustomCursor from "./components/CustomCursor";
 import ContactForm from "./pages/ContactForm";
 
 import { Routes, Route } from "react-router-dom";
+import ServiceShowcase from "./components/serviceShowCase";
 
 function App() {
   return (
@@ -58,8 +59,10 @@ function App() {
               <Hero />
               <About />
               <Features />
-              <Story />
+              {/* <Story /> */}
+              
               <Contact />
+              <ServiceShowcase />
               <Footer />
             </>
           }
@@ -73,3 +76,53 @@ function App() {
 }
 
 export default App;
+// import About from "./components/About";
+// import Hero from "./components/Hero";
+// import NavBar from "./components/Navbar";
+// import Features from "./components/Features";
+// import Story from "./components/Story";
+// import Contact from "./components/Contact";
+// import Footer from "./components/Footer";
+// import CustomCursor from "./components/CustomCursor";
+
+// import ContactForm from "./pages/ContactForm";
+
+// import { Routes, Route } from "react-router-dom";
+// import ServiceShowcase from "./components/serviceShowCase";
+// import SmoothScroll from "./wrapper/SmoothScroll";
+
+
+
+// function App() {
+//   return (
+//     <main className="relative min-h-screen w-screen overflow-x-hidden">
+//       <CustomCursor />
+//       <NavBar />
+
+//       <SmoothScroll>
+//         <Routes>
+//           {/* Homepage */}
+//           <Route
+//             path="/"
+//             element={
+//               <>
+//                 <Hero />
+//                 <About />
+//                 <Features />
+//                 {/* <Story /> */}
+//                 <Contact />
+//                 <ServiceShowcase />
+//                 <Footer />
+//               </>
+//             }
+//           />
+
+//           {/* Contact Page */}
+//           <Route path="/contact" element={<ContactForm />} />
+//         </Routes>
+//       </SmoothScroll>
+//     </main>
+//   );
+// }
+
+// export default App;

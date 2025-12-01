@@ -32,6 +32,20 @@ const Hero = () => {
     }
   }, [loadedVideos]);
 
+  useEffect(() => {
+  if (loading) {
+    document.body.style.overflow = "hidden";  // ⛔ disable scroll
+  } else {
+    document.body.style.overflow = "auto";    // ✅ enable scroll
+  }
+
+  // cleanup when component unmount
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [loading]);
+
+
   const handleMiniVdClick = () => {
     setHasClicked(true);
 
@@ -87,7 +101,9 @@ const Hero = () => {
   const getVideoSrc = (index) => `videos/230767_medium.mp4`;
 
   return (
-    <div className="relative h-dvh w-screen overflow-x-hidden">
+    // <div data-scroll-section className="relative h-dvh w-screen overflow-x-hidden">
+    <div  className="relative min-h-dvh w-screen overflow-x-hidden">
+
       {loading && (
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-white">
          
@@ -96,14 +112,19 @@ const Hero = () => {
             <div className="three-body__dot"></div>
             <div className="three-body__dot"></div>
           </div> */}
-          <Loader/>
+          {/* <Loader/> */}
         </div>
       )}
 
-      <div
+      {/* <div
         id="video-frame"
         className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
-      >
+      > */}
+      <div
+  id="video-frame"
+  className="relative z-10 min-h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
+>
+
         <div>
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
             <VideoPreview>
