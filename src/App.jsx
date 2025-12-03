@@ -151,7 +151,9 @@ import CustomCursor from "./components/CustomCursor";
 import ContactForm from "./pages/ContactForm";
 
 import { Routes, Route } from "react-router-dom";
-import ServiceShowcase from "./components/serviceShowCase";
+
+import ServiceShowcase from "./components/Temp";
+
 import ServicesSection from "./components/ServicesSection";
 
 import GymForm from "./other/GymForm";
