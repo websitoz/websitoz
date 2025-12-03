@@ -199,16 +199,16 @@ const NavBar = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   // Toggle audio
-  const toggleAudioIndicator = () => {
-    setIsAudioPlaying((p) => !p);
-    setIsIndicatorActive((p) => !p);
-  };
+  // const toggleAudioIndicator = () => {
+  //   setIsAudioPlaying((p) => !p);
+  //   setIsIndicatorActive((p) => !p);
+  // };
 
   // Audio control
-  useEffect(() => {
-    if (isAudioPlaying) audioRef.current.play();
-    else audioRef.current.pause();
-  }, [isAudioPlaying]);
+  // useEffect(() => {
+  //   if (isAudioPlaying) audioRef.current.play();
+  //   else audioRef.current.pause();
+  // }, [isAudioPlaying]);
 
   // Scroll hide/show behavior
   useEffect(() => {
@@ -339,7 +339,7 @@ const NavBar = () => {
               </div>
 
               {/* Audio */}
-              <button onClick={toggleAudioIndicator} className="ml-8 flex gap-1 group">
+              {/* <button onClick={toggleAudioIndicator} className="ml-8 flex gap-1 group">
                 <audio ref={audioRef} className="hidden" src="/audio/loop.mp3" loop />
                 {[1,2,3,4].map((bar) => (
                   <div
@@ -350,7 +350,7 @@ const NavBar = () => {
                     style={{ animationDelay: `${bar * 0.12}s` }}
                   />
                 ))}
-              </button>
+              </button> */}
 
               {/* MOBILE MENU BUTTON */}
               <button

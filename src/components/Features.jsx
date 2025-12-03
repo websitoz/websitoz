@@ -499,7 +499,7 @@ const Features = () => {
           {/* Web Dev */}
           <BentoTilt>
             <BentoCard
-              src="videos/web1.mp4"
+              src="videos/web1.webm"
               title={
                 <>
                   Web <b>Development</b>
