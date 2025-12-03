@@ -181,7 +181,7 @@ import Button from "./Button";
 const navItems = ["About", "Contact"];
 const mobileExtraItems = [
   { title: "Terms & Conditions", link: "/terms" },
-  { title: "Privacy Policy", link: "/privacy" },
+  { title: "FAQ", link: "/faq" },
 ];
 
 const NavBar = () => {

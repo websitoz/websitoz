@@ -160,6 +160,8 @@ import GymForm from "./other/GymForm";
 import EcommerceForm from "./other/EcommerceForm";
 import TravelForm from "./other/TravelForm";
 import EducationForm from "./other/EducationForm";
+import TermsAndConditions from "./pages/TermsAndCondition";
+import FAQ from "./pages/FAQ";
 
 function App() {
   return (
@@ -193,6 +195,8 @@ function App() {
 
         {/* These pages WON'T appear on homepage anymore */}
         <Route path="/gym" element={<GymForm />} />
+        <Route path="/terms" element={<TermsAndConditions/>} />
+        <Route path="/faq" element={<FAQ/>} />
         <Route path="/ecommerce" element={<EcommerceForm />} />
         <Route path="/travel" element={<TravelForm />} />
         <Route path="/education" element={<EducationForm />} />
