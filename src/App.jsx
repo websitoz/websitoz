@@ -154,6 +154,7 @@ import ImageReveal from './components/lightswind/image-reveal';
 import { Routes, Route } from "react-router-dom";
 
 import ServiceShowcase from "./components/Temp";
+import ModelViewer from './components/lightswind/3d-model-viewer';
 
 import ServicesSection from "./components/ServicesSection";
 import { ScrollTimeline } from "./components/lightswind/scroll-timeline";
@@ -188,6 +189,12 @@ function App() {
 
               {/* <ServiceShowcase /> */}
               <ImageReveal />
+              <ModelViewer
+  url="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/FlightHelmet/glTF/FlightHelmet.gltf"
+  autoRotate={true}
+  autoRotateSpeed={1.0}
+  environmentPreset="studio"
+/>
              <ScrollReveal textClassName="px-4 my-10">
   We build fast, modern, and visually captivating websites that leave a lasting
   impression. With smooth scroll-triggered animations, interactive sections, and
