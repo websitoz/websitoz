@@ -147,15 +147,16 @@ import Features from "./components/Features";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
-
+// import { ScrollReveal } from "@/components/scroll-reveal"
+import ScrollReveal from "./components/lightswind/scroll-reveal";
 import ContactForm from "./pages/ContactForm";
-
+import ImageReveal from './components/lightswind/image-reveal';
 import { Routes, Route } from "react-router-dom";
 
 import ServiceShowcase from "./components/Temp";
 
 import ServicesSection from "./components/ServicesSection";
-
+import { ScrollTimeline } from "./components/lightswind/scroll-timeline";
 import GymForm from "./other/GymForm";
 import EcommerceForm from "./other/EcommerceForm";
 import TravelForm from "./other/TravelForm";
@@ -183,8 +184,17 @@ function App() {
               <div className="w-full min-h-screen">
                 <ServicesSection />
               </div>
+              <ScrollTimeline />
 
-              <ServiceShowcase />
+              {/* <ServiceShowcase /> */}
+              <ImageReveal />
+             <ScrollReveal textClassName="px-4 my-10">
+  We build fast, modern, and visually captivating websites that leave a lasting
+  impression. With smooth scroll-triggered animations, interactive sections, and
+  performance-focused design, we transform your digital presence into an engaging
+  experience that keeps users scrolling, exploring, and connecting with your brand.
+</ScrollReveal>
+
               <Footer />
             </>
           }

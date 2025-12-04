@@ -117,12 +117,12 @@ const Footer = () => {
             <h3 className="text-xl font-bold border-l-4 border-[#ceff05] pl-3">Working Hours</h3>
             
             <p className="text-4xl font-extrabold text-white leading-tight">
-                09 : 00 AM <br />
+                10 : 00 AM <br />
                 - 
-                <span className="text-gray-400 ml-2">06 : 00 PM</span>
+                <span className="text-gray-400 ml-2">07 : 00 PM</span>
             </p>
             <p className="text-sm font-bold text-gray-400 pt-2">
-                Monday - Friday (IST)
+                Monday - Saturday (IST)
             </p>
           </div>
           

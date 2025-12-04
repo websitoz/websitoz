@@ -189,9 +189,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <h1 className="special-font hero-heading  absolute bottom-5 right-5 text-black">
+      {/* <h1 className="special-font hero-heading  absolute bottom-5 right-5 text-black">
         A<b>G</b>ENCY
-      </h1>
+      </h1> */}
+      {/* <h1 className="special-font hero-heading absolute bottom-5 right-5 text-white z-[999]">
+  A<b>G</b>ENCY
+</h1> */}
+
       
     </div>
   );
