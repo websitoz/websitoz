@@ -155,7 +155,7 @@ import SlidingCards from './components/lightswind/sliding-cards';
 import ContactForm from "./pages/ContactForm";
 import ImageReveal from './components/lightswind/image-reveal';
 import { Routes, Route } from "react-router-dom";
-
+import CircularText from './animation/CircularText.jsx';
 import ServiceShowcase from "./components/Temp";
 import ModelViewer from './components/lightswind/3d-model-viewer';
 
@@ -169,6 +169,7 @@ import TermsAndConditions from "./pages/TermsAndCondition";
 import FAQ from "./pages/FAQ";
 import { FaStar, FaBolt, FaHeart } from 'react-icons/fa';
 import { ThreeDMarquee } from "./components/lightswind/3d-marquee";
+import FlowingMenu from "./animation/FlowingMenu.jsx";
 
 function App() {
  
@@ -196,6 +197,12 @@ const cardItems = [
   },
 ];
 
+const demoItems = [
+  { link: '#', text: 'We Grow Brands', image: 'https://picsum.photos/600/400?random=1' },
+  { link: '#', text: 'Building Digital Presence', image: 'https://picsum.photos/600/400?random=2' },
+  { link: '#', text: 'Designing Better Experiences', image: 'https://picsum.photos/600/400?random=3' },
+  { link: '#', text: 'Scaling Modern Businesses', image: 'https://picsum.photos/600/400?random=4' }
+];
 
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
@@ -218,11 +225,14 @@ const cardItems = [
               </div>
               <SlidingCards cards={cardItems} cardSize="w-20 h-20" className="mx-auto" />;
               <ScrollTimeline />
+              
 
               {/* <ServiceShowcase /> */}
               <ImageReveal />
-              <div className="px-10">
-
+              <div className="px-4">
+              <div style={{ height: '600px', backgroundColor: '#111111', marginTop:'60px', marginBottom:'60px', display:'flex', alignItems:'center', justifyContent:'center' }}>
+  <FlowingMenu items={demoItems} />
+</div>
               <ThreeDMarquee  />
               </div>
               <ModelViewer

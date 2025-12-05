@@ -2,6 +2,7 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { MdOutlineArrowRightAlt } from 'react-icons/md';
+import CircularText from '../animation/CircularText';
 
 // Define the primary accent color for a premium look
 const accentColor = 'text-[#ceff05]'; // Modern, tech-focused green
@@ -27,15 +28,21 @@ const Footer = () => {
           {/* Contact Us Button - Right side */}
           <div className="md:w-2/5 flex justify-start md:justify-end">
             <a href="#">
-              <button className={`relative w-44 h-44 rounded-full border-2 border-[#ceff05] bg-gray-900 flex items-center justify-center text-base font-extrabold text-white transition duration-300 ${buttonHoverBorder} group transform hover:scale-105 shadow-2xl`}>
+              <button className={`relative w-46 h-46 rounded-full border-2 border-[#ceff05] bg-gray-900 flex items-center justify-center text-base font-extrabold text-white transition duration-300 ${buttonHoverBorder} group transform hover:scale-105 shadow-2xl`}>
                 
                 {/* Inner Circle for effect */}
                 <div className="absolute w-28 h-28 rounded-full border border-gray-700 opacity-50"></div>
                 
                 {/* Button Text */}
                 <span className="relative z-10 flex items-center tracking-wider">
-                  Contact Us 
-                  <MdOutlineArrowRightAlt size={24} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  {/* Contact Us  */}
+                  <CircularText
+  text="WEB*SIT*TOZ*AGE*NCY*"
+  onHover="speedUp"
+  spinDuration={20}
+  className="custom-class"
+/>
+                  {/* <MdOutlineArrowRightAlt size={24} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" /> */}
                 </span>
               </button>
             </a>
