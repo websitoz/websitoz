@@ -97,7 +97,11 @@ export const ThreeDMarquee: React.FC<ThreeDMarqueeProps> = ({
                 key={`column-${idx}`}
                 animate={{ y: idx % 2 === 0 ? 100 : -100 }}
                 transition={{
-                  duration: idx % 2 === 0 ? 10 : 15,
+                  // duration: idx % 2 === 0 ? 10 : 15,
+                  duration: idx % 2 === 0 ? 5 : 7,
+                  // duration: idx % 2 === 0 ? 2 : 3,
+
+
                   repeat: Infinity,
                   repeatType: "reverse",
                 }}

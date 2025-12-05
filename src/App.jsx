@@ -221,7 +221,10 @@ const cardItems = [
 
               {/* <ServiceShowcase /> */}
               <ImageReveal />
+              <div className="px-10">
+
               <ThreeDMarquee  />
+              </div>
               <ModelViewer
   url="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/FlightHelmet/glTF/FlightHelmet.gltf"
   autoRotate={true}
