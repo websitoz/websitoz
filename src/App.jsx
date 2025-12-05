@@ -144,11 +144,14 @@ import About from "./components/About";
 import Hero from "./components/Hero";
 import NavBar from "./components/Navbar";
 import Features from "./components/Features";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
+import Contact  from "./pages/AppointMentForm";
 import Footer from "./components/Footer";
+
 import CustomCursor from "./components/CustomCursor";
 // import { ScrollReveal } from "@/components/scroll-reveal"
 import ScrollReveal from "./components/lightswind/scroll-reveal";
+import SlidingCards from './components/lightswind/sliding-cards';
 import ContactForm from "./pages/ContactForm";
 import ImageReveal from './components/lightswind/image-reveal';
 import { Routes, Route } from "react-router-dom";
@@ -164,8 +167,36 @@ import TravelForm from "./other/TravelForm";
 import EducationForm from "./other/EducationForm";
 import TermsAndConditions from "./pages/TermsAndCondition";
 import FAQ from "./pages/FAQ";
+import { FaStar, FaBolt, FaHeart } from 'react-icons/fa';
+import { ThreeDMarquee } from "./components/lightswind/3d-marquee";
 
 function App() {
+ 
+
+
+
+const cardItems = [
+  { 
+    id: 1, 
+    icon: <FaStar />, 
+    quote: "Design is intelligence made visible.",
+    bgClass: "bg-gradient-to-br from-yellow-400 to-red-400" 
+  },
+  { 
+    id: 2, 
+    icon: <FaBolt />, 
+    quote: "Innovation starts with imagination.",
+    bgClass: "bg-gradient-to-br from-purple-400 to-pink-400" 
+  },
+  { 
+    id: 3, 
+    icon: <FaHeart />, 
+    quote: "Users remember experiences, not features.",
+    bgClass: "bg-gradient-to-br from-teal-400 to-cyan-300" 
+  },
+];
+
+
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
       <CustomCursor />
@@ -180,15 +211,17 @@ function App() {
               <Hero />
               <About />
               <Features />
-              <Contact />
+              {/* <Contact /> */}
 
               <div className="w-full min-h-screen">
                 <ServicesSection />
               </div>
+              <SlidingCards cards={cardItems} cardSize="w-20 h-20" className="mx-auto" />;
               <ScrollTimeline />
 
               {/* <ServiceShowcase /> */}
               <ImageReveal />
+              <ThreeDMarquee  />
               <ModelViewer
   url="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/FlightHelmet/glTF/FlightHelmet.gltf"
   autoRotate={true}
@@ -209,6 +242,7 @@ function App() {
 
         {/* Contact Page */}
         <Route path="/contact" element={<ContactForm />} />
+        <Route path="/appointment" element={<Contact />} />
 
         {/* These pages WON'T appear on homepage anymore */}
         <Route path="/gym" element={<GymForm />} />

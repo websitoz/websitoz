@@ -17,8 +17,44 @@ export interface ThreeDMarqueeProps {
   onImageClick?: (image: MarqueeImage, index: number) => void;
 }
 
+const images:MarqueeImage[] = [
+  {
+    src: "https://cdn.dribbble.com/userupload/45668552/file/852148c6230129593e00118a1f66c799.png?resize=1504x937&vertical=center",
+    alt: "Description 1"
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/10218913/file/original-e36651f0e8b684c43abb4d5ee2535d78.png?resize=1504x1128&vertical=center", 
+    alt: "Description 2"
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/15458850/file/original-cbd7e1adeb51f4d665347b407793d9f1.jpg?resize=1504x1128&vertical=center",
+    alt: "Description 1"
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/43807420/file/original-621474f7435cbbc69aed69cf256c1ea8.jpg?resize=1504x1128&vertical=center", 
+    alt: "Description 2"
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/12017863/file/original-81427c44c3bb53199e8c3db7196ffd9a.png?resize=1504x1128&vertical=center",
+    alt: "Description 1"
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/41559459/file/original-28d389d4d1f01c702aad1bf57a4a7d2d.png?resize=1504x1128&vertical=center", 
+    alt: "Description 2"
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/45743044/file/8ffec814ff93ca9c0f8c61f4439289bf.png?resize=1504x1128&vertical=center",
+    alt: "Description 1"
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/45712663/file/d2b20c1c3fa43c2726be1990eabf917e.png?resize=1504x1128&vertical=center", 
+    alt: "Description 2"
+  },
+  
+  
+];
+
 export const ThreeDMarquee: React.FC<ThreeDMarqueeProps> = ({
-  images,
   className = "",
   cols = 4,
   onImageClick,

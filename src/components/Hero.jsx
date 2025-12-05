@@ -9,6 +9,7 @@ import Button from "./Button";
 import VideoPreview from "./VideoPreview";
 
 import Loader from "./Loader";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -178,13 +179,14 @@ const Hero = () => {
               We create modern websites, mobile apps & digital products<br />
               for startups and growing brands.
             </p>
-
+            <Link to='/appointment'>
             <Button
               id="get-quote"
               title="Get a Free Quote"
               leftIcon={<TiLocationArrow />}
               containerClass="bg-yellow-300 flex-center gap-1"
             />
+            </Link>
           </div>
         </div>
       </div>
